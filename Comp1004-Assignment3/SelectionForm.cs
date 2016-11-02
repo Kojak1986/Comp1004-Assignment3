@@ -16,5 +16,18 @@ namespace Comp1004_Assignment3
         {
             InitializeComponent();
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            NextButton.Enabled = true;
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            OrderForm order = new OrderForm();
+
+            order.Show();
+            this.Hide();
+        }
     }
 }

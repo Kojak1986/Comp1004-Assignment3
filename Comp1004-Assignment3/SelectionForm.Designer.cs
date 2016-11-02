@@ -77,6 +77,7 @@
             this.listBox1.Size = new System.Drawing.Size(186, 327);
             this.listBox1.Sorted = true;
             this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // TitleLabel
             // 
@@ -191,6 +192,7 @@
             // 
             // NextButton
             // 
+            this.NextButton.Enabled = false;
             this.NextButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NextButton.Location = new System.Drawing.Point(611, 387);
             this.NextButton.Name = "NextButton";
@@ -198,6 +200,7 @@
             this.NextButton.TabIndex = 4;
             this.NextButton.Text = "Next";
             this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // SelectionForm
             // 
