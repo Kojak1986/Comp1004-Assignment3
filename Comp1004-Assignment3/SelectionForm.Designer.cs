@@ -32,13 +32,13 @@
             this.TitleLabel = new System.Windows.Forms.Label();
             this.ListBoxLabel = new System.Windows.Forms.Label();
             this.SelectGroupBox = new System.Windows.Forms.GroupBox();
-            this.SelectionPictureBox = new System.Windows.Forms.PictureBox();
-            this.MovieTitleLabel = new System.Windows.Forms.Label();
-            this.TitleTextBox = new System.Windows.Forms.TextBox();
-            this.GenreLabel = new System.Windows.Forms.Label();
-            this.GenreTextBox = new System.Windows.Forms.TextBox();
-            this.CostLabel = new System.Windows.Forms.Label();
             this.CostTextBox = new System.Windows.Forms.TextBox();
+            this.CostLabel = new System.Windows.Forms.Label();
+            this.GenreTextBox = new System.Windows.Forms.TextBox();
+            this.GenreLabel = new System.Windows.Forms.Label();
+            this.TitleTextBox = new System.Windows.Forms.TextBox();
+            this.MovieTitleLabel = new System.Windows.Forms.Label();
+            this.SelectionPictureBox = new System.Windows.Forms.PictureBox();
             this.NextButton = new System.Windows.Forms.Button();
             this.SelectGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SelectionPictureBox)).BeginInit();
@@ -72,7 +72,7 @@
             "The Way Back",
             "Waiting for Forever"});
             this.listBox1.Location = new System.Drawing.Point(33, 93);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(186, 327);
             this.listBox1.Sorted = true;
@@ -112,63 +112,23 @@
             this.SelectGroupBox.Controls.Add(this.SelectionPictureBox);
             this.SelectGroupBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.SelectGroupBox.Location = new System.Drawing.Point(227, 93);
-            this.SelectGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SelectGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.SelectGroupBox.Name = "SelectGroupBox";
-            this.SelectGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.SelectGroupBox.Size = new System.Drawing.Size(466, 256);
+            this.SelectGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.SelectGroupBox.Size = new System.Drawing.Size(466, 261);
             this.SelectGroupBox.TabIndex = 3;
             this.SelectGroupBox.TabStop = false;
             this.SelectGroupBox.Text = "Your Selection";
             // 
-            // SelectionPictureBox
+            // CostTextBox
             // 
-            this.SelectionPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.SelectionPictureBox.Location = new System.Drawing.Point(9, 27);
-            this.SelectionPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.SelectionPictureBox.Name = "SelectionPictureBox";
-            this.SelectionPictureBox.Size = new System.Drawing.Size(186, 224);
-            this.SelectionPictureBox.TabIndex = 0;
-            this.SelectionPictureBox.TabStop = false;
-            // 
-            // MovieTitleLabel
-            // 
-            this.MovieTitleLabel.AutoSize = true;
-            this.MovieTitleLabel.Location = new System.Drawing.Point(222, 27);
-            this.MovieTitleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.MovieTitleLabel.Name = "MovieTitleLabel";
-            this.MovieTitleLabel.Size = new System.Drawing.Size(34, 19);
-            this.MovieTitleLabel.TabIndex = 1;
-            this.MovieTitleLabel.Text = "Title";
-            // 
-            // TitleTextBox
-            // 
-            this.TitleTextBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.TitleTextBox.Location = new System.Drawing.Point(226, 54);
-            this.TitleTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.TitleTextBox.Name = "TitleTextBox";
-            this.TitleTextBox.ReadOnly = true;
-            this.TitleTextBox.Size = new System.Drawing.Size(216, 26);
-            this.TitleTextBox.TabIndex = 2;
-            // 
-            // GenreLabel
-            // 
-            this.GenreLabel.AutoSize = true;
-            this.GenreLabel.Location = new System.Drawing.Point(222, 88);
-            this.GenreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.GenreLabel.Name = "GenreLabel";
-            this.GenreLabel.Size = new System.Drawing.Size(46, 19);
-            this.GenreLabel.TabIndex = 3;
-            this.GenreLabel.Text = "Genre";
-            // 
-            // GenreTextBox
-            // 
-            this.GenreTextBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.GenreTextBox.Location = new System.Drawing.Point(226, 115);
-            this.GenreTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.GenreTextBox.Name = "GenreTextBox";
-            this.GenreTextBox.ReadOnly = true;
-            this.GenreTextBox.Size = new System.Drawing.Size(118, 26);
-            this.GenreTextBox.TabIndex = 4;
+            this.CostTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.CostTextBox.Location = new System.Drawing.Point(226, 176);
+            this.CostTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CostTextBox.Name = "CostTextBox";
+            this.CostTextBox.ReadOnly = true;
+            this.CostTextBox.Size = new System.Drawing.Size(118, 26);
+            this.CostTextBox.TabIndex = 6;
             // 
             // CostLabel
             // 
@@ -180,15 +140,55 @@
             this.CostLabel.TabIndex = 5;
             this.CostLabel.Text = "Cost";
             // 
-            // CostTextBox
+            // GenreTextBox
             // 
-            this.CostTextBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.CostTextBox.Location = new System.Drawing.Point(226, 176);
-            this.CostTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.CostTextBox.Name = "CostTextBox";
-            this.CostTextBox.ReadOnly = true;
-            this.CostTextBox.Size = new System.Drawing.Size(118, 26);
-            this.CostTextBox.TabIndex = 6;
+            this.GenreTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.GenreTextBox.Location = new System.Drawing.Point(226, 115);
+            this.GenreTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.GenreTextBox.Name = "GenreTextBox";
+            this.GenreTextBox.ReadOnly = true;
+            this.GenreTextBox.Size = new System.Drawing.Size(118, 26);
+            this.GenreTextBox.TabIndex = 4;
+            // 
+            // GenreLabel
+            // 
+            this.GenreLabel.AutoSize = true;
+            this.GenreLabel.Location = new System.Drawing.Point(222, 88);
+            this.GenreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.GenreLabel.Name = "GenreLabel";
+            this.GenreLabel.Size = new System.Drawing.Size(46, 19);
+            this.GenreLabel.TabIndex = 3;
+            this.GenreLabel.Text = "Genre";
+            // 
+            // TitleTextBox
+            // 
+            this.TitleTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.TitleTextBox.Location = new System.Drawing.Point(226, 54);
+            this.TitleTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.TitleTextBox.Name = "TitleTextBox";
+            this.TitleTextBox.ReadOnly = true;
+            this.TitleTextBox.Size = new System.Drawing.Size(216, 26);
+            this.TitleTextBox.TabIndex = 2;
+            // 
+            // MovieTitleLabel
+            // 
+            this.MovieTitleLabel.AutoSize = true;
+            this.MovieTitleLabel.Location = new System.Drawing.Point(222, 27);
+            this.MovieTitleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MovieTitleLabel.Name = "MovieTitleLabel";
+            this.MovieTitleLabel.Size = new System.Drawing.Size(34, 19);
+            this.MovieTitleLabel.TabIndex = 1;
+            this.MovieTitleLabel.Text = "Title";
+            // 
+            // SelectionPictureBox
+            // 
+            this.SelectionPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.SelectionPictureBox.Location = new System.Drawing.Point(9, 27);
+            this.SelectionPictureBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SelectionPictureBox.Name = "SelectionPictureBox";
+            this.SelectionPictureBox.Size = new System.Drawing.Size(186, 224);
+            this.SelectionPictureBox.TabIndex = 0;
+            this.SelectionPictureBox.TabStop = false;
             // 
             // NextButton
             // 
@@ -207,7 +207,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(706, 435);
+            this.ClientSize = new System.Drawing.Size(702, 431);
             this.ControlBox = false;
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.SelectGroupBox);
@@ -217,7 +217,7 @@
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "SelectionForm";
