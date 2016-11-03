@@ -29,5 +29,10 @@ namespace Comp1004_Assignment3
             order.Show();
             this.Hide();
         }
+
+        private void SaveName()
+        {
+            
+        }
     }
 }

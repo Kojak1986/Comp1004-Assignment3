@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.SelectionListBox = new System.Windows.Forms.ListBox();
             this.TitleLabel = new System.Windows.Forms.Label();
             this.ListBoxLabel = new System.Windows.Forms.Label();
             this.SelectGroupBox = new System.Windows.Forms.GroupBox();
@@ -44,13 +44,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.SelectionPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // listBox1
+            // SelectionListBox
             // 
-            this.listBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.listBox1.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 19;
-            this.listBox1.Items.AddRange(new object[] {
+            this.SelectionListBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.SelectionListBox.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.SelectionListBox.FormattingEnabled = true;
+            this.SelectionListBox.ItemHeight = 19;
+            this.SelectionListBox.Items.AddRange(new object[] {
             "Cedar Rapids",
             "Company Men",
             "Death Race 2",
@@ -71,13 +71,13 @@
             "The Roommate",
             "The Way Back",
             "Waiting for Forever"});
-            this.listBox1.Location = new System.Drawing.Point(33, 93);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(186, 327);
-            this.listBox1.Sorted = true;
-            this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.SelectionListBox.Location = new System.Drawing.Point(33, 93);
+            this.SelectionListBox.Margin = new System.Windows.Forms.Padding(4);
+            this.SelectionListBox.Name = "SelectionListBox";
+            this.SelectionListBox.Size = new System.Drawing.Size(186, 327);
+            this.SelectionListBox.Sorted = true;
+            this.SelectionListBox.TabIndex = 0;
+            this.SelectionListBox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // TitleLabel
             // 
@@ -207,13 +207,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(702, 431);
+            this.ClientSize = new System.Drawing.Size(698, 427);
             this.ControlBox = false;
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.SelectGroupBox);
             this.Controls.Add(this.ListBoxLabel);
             this.Controls.Add(this.TitleLabel);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.SelectionListBox);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -223,7 +223,7 @@
             this.Name = "SelectionForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Selection Form";
+            this.Text = "Movie Bananza Select";
             this.SelectGroupBox.ResumeLayout(false);
             this.SelectGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SelectionPictureBox)).EndInit();
@@ -234,7 +234,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox SelectionListBox;
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.Label ListBoxLabel;
         private System.Windows.Forms.GroupBox SelectGroupBox;

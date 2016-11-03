@@ -16,5 +16,17 @@ namespace Comp1004_Assignment3
         {
             InitializeComponent();
         }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void OrderForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        
     }
 }
