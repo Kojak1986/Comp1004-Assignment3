@@ -59,7 +59,7 @@
             "I am Number Four",
             "Just Go With It",
             "No Strings Attached",
-            "Real Steal",
+            "Real Steel",
             "Sanctum",
             "Season of the Witch",
             "The Dilemma",
@@ -207,7 +207,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(698, 427);
+            this.ClientSize = new System.Drawing.Size(694, 423);
             this.ControlBox = false;
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.SelectGroupBox);
