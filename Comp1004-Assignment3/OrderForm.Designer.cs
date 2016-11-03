@@ -35,10 +35,10 @@
             this.GenreLabel = new System.Windows.Forms.Label();
             this.TitleLabel = new System.Windows.Forms.Label();
             this.YourOrderGroupBox = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SubtotalTextBox = new System.Windows.Forms.TextBox();
+            this.SalesTaxTextBox = new System.Windows.Forms.TextBox();
+            this.GrandTotalTextBox = new System.Windows.Forms.TextBox();
+            this.CostTextBox = new System.Windows.Forms.TextBox();
             this.OrderDvdCheckBox = new System.Windows.Forms.CheckBox();
             this.TotalLabel = new System.Windows.Forms.Label();
             this.SalesTaxLabel = new System.Windows.Forms.Label();
@@ -85,16 +85,20 @@
             // GenreTextBox
             // 
             this.GenreTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.GenreTextBox.Enabled = false;
             this.GenreTextBox.Location = new System.Drawing.Point(41, 110);
             this.GenreTextBox.Name = "GenreTextBox";
+            this.GenreTextBox.ReadOnly = true;
             this.GenreTextBox.Size = new System.Drawing.Size(243, 26);
             this.GenreTextBox.TabIndex = 3;
             // 
             // TitleTextBox
             // 
             this.TitleTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.TitleTextBox.Enabled = false;
             this.TitleTextBox.Location = new System.Drawing.Point(41, 55);
             this.TitleTextBox.Name = "TitleTextBox";
+            this.TitleTextBox.ReadOnly = true;
             this.TitleTextBox.Size = new System.Drawing.Size(243, 26);
             this.TitleTextBox.TabIndex = 2;
             // 
@@ -118,10 +122,10 @@
             // 
             // YourOrderGroupBox
             // 
-            this.YourOrderGroupBox.Controls.Add(this.textBox4);
-            this.YourOrderGroupBox.Controls.Add(this.textBox3);
-            this.YourOrderGroupBox.Controls.Add(this.textBox2);
-            this.YourOrderGroupBox.Controls.Add(this.textBox1);
+            this.YourOrderGroupBox.Controls.Add(this.SubtotalTextBox);
+            this.YourOrderGroupBox.Controls.Add(this.SalesTaxTextBox);
+            this.YourOrderGroupBox.Controls.Add(this.GrandTotalTextBox);
+            this.YourOrderGroupBox.Controls.Add(this.CostTextBox);
             this.YourOrderGroupBox.Controls.Add(this.OrderDvdCheckBox);
             this.YourOrderGroupBox.Controls.Add(this.TotalLabel);
             this.YourOrderGroupBox.Controls.Add(this.SalesTaxLabel);
@@ -134,37 +138,45 @@
             this.YourOrderGroupBox.TabStop = false;
             this.YourOrderGroupBox.Text = "Your Order";
             // 
-            // textBox4
+            // SubtotalTextBox
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox4.Location = new System.Drawing.Point(181, 82);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 26);
-            this.textBox4.TabIndex = 9;
+            this.SubtotalTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.SubtotalTextBox.Enabled = false;
+            this.SubtotalTextBox.Location = new System.Drawing.Point(181, 82);
+            this.SubtotalTextBox.Name = "SubtotalTextBox";
+            this.SubtotalTextBox.ReadOnly = true;
+            this.SubtotalTextBox.Size = new System.Drawing.Size(100, 26);
+            this.SubtotalTextBox.TabIndex = 9;
             // 
-            // textBox3
+            // SalesTaxTextBox
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox3.Location = new System.Drawing.Point(181, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 26);
-            this.textBox3.TabIndex = 8;
+            this.SalesTaxTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.SalesTaxTextBox.Enabled = false;
+            this.SalesTaxTextBox.Location = new System.Drawing.Point(181, 129);
+            this.SalesTaxTextBox.Name = "SalesTaxTextBox";
+            this.SalesTaxTextBox.ReadOnly = true;
+            this.SalesTaxTextBox.Size = new System.Drawing.Size(100, 26);
+            this.SalesTaxTextBox.TabIndex = 8;
             // 
-            // textBox2
+            // GrandTotalTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox2.Location = new System.Drawing.Point(181, 176);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 7;
+            this.GrandTotalTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.GrandTotalTextBox.Enabled = false;
+            this.GrandTotalTextBox.Location = new System.Drawing.Point(181, 176);
+            this.GrandTotalTextBox.Name = "GrandTotalTextBox";
+            this.GrandTotalTextBox.ReadOnly = true;
+            this.GrandTotalTextBox.Size = new System.Drawing.Size(100, 26);
+            this.GrandTotalTextBox.TabIndex = 7;
             // 
-            // textBox1
+            // CostTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox1.Location = new System.Drawing.Point(181, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 6;
+            this.CostTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.CostTextBox.Enabled = false;
+            this.CostTextBox.Location = new System.Drawing.Point(181, 35);
+            this.CostTextBox.Name = "CostTextBox";
+            this.CostTextBox.ReadOnly = true;
+            this.CostTextBox.Size = new System.Drawing.Size(100, 26);
+            this.CostTextBox.TabIndex = 6;
             // 
             // OrderDvdCheckBox
             // 
@@ -317,6 +329,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Movie Bananza Order";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OrderForm_FormClosing);
+            this.Load += new System.EventHandler(this.OrderForm_Load);
             this.MovieSelectedGroupBox.ResumeLayout(false);
             this.MovieSelectedGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MoviePictureBox)).EndInit();
@@ -348,10 +361,10 @@
         private System.Windows.Forms.TextBox TitleTextBox;
         private System.Windows.Forms.Label GenreLabel;
         private System.Windows.Forms.Label TitleLabel;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox SubtotalTextBox;
+        private System.Windows.Forms.TextBox SalesTaxTextBox;
+        private System.Windows.Forms.TextBox GrandTotalTextBox;
+        private System.Windows.Forms.TextBox CostTextBox;
         private System.Windows.Forms.CheckBox OrderDvdCheckBox;
         private System.Windows.Forms.Label TotalLabel;
         private System.Windows.Forms.Label SalesTaxLabel;

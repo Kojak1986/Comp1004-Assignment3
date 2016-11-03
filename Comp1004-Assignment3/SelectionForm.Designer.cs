@@ -123,6 +123,7 @@
             // CostTextBox
             // 
             this.CostTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.CostTextBox.Enabled = false;
             this.CostTextBox.Location = new System.Drawing.Point(226, 176);
             this.CostTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CostTextBox.Name = "CostTextBox";
@@ -143,6 +144,7 @@
             // GenreTextBox
             // 
             this.GenreTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.GenreTextBox.Enabled = false;
             this.GenreTextBox.Location = new System.Drawing.Point(226, 115);
             this.GenreTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.GenreTextBox.Name = "GenreTextBox";
@@ -163,6 +165,7 @@
             // TitleTextBox
             // 
             this.TitleTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.TitleTextBox.Enabled = false;
             this.TitleTextBox.Location = new System.Drawing.Point(226, 54);
             this.TitleTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TitleTextBox.Name = "TitleTextBox";
@@ -207,7 +210,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.ClientSize = new System.Drawing.Size(694, 423);
+            this.ClientSize = new System.Drawing.Size(690, 419);
             this.ControlBox = false;
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.SelectGroupBox);

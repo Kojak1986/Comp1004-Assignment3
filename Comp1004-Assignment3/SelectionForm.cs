@@ -12,6 +12,7 @@ namespace Comp1004_Assignment3
 {
     public partial class SelectionForm : Form
     {
+        
         public SelectionForm()
         {
             InitializeComponent();
@@ -20,9 +21,9 @@ namespace Comp1004_Assignment3
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             NextButton.Enabled = true;
-
-            SaveInfo();
+            TitleTextBox.Text = Convert.ToString(SelectionListBox.Text);
             SetInfo();
+            SaveInfo();
         }
 
         private void NextButton_Click(object sender, EventArgs e)
@@ -35,10 +36,10 @@ namespace Comp1004_Assignment3
 
         private void SaveInfo()
         {
-            MovieAndGenre movie = new MovieAndGenre();
-            TitleTextBox.Text = Convert.ToString(SelectionListBox.Text);
-
-            movie.Title = TitleTextBox.Text;
+            
+            Program.info.Title = TitleTextBox.Text;
+            Program.info.Genre = GenreTextBox.Text;
+            Program.info.Cost = CostTextBox.Text;
 
         }
 
@@ -119,6 +120,8 @@ namespace Comp1004_Assignment3
             {
                 CostTextBox.Text = "$4.99";
             }
+
+             
 
         }
 

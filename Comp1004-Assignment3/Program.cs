@@ -8,6 +8,7 @@ namespace Comp1004_Assignment3
 {
     static class Program
     {
+        public static MovieAndGenre info = new MovieAndGenre();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
