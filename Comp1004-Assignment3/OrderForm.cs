@@ -54,5 +54,18 @@ namespace Comp1004_Assignment3
             GrandTotalTextBox.Text = Grand.ToString("C2");
 
         }
+
+        //Back button returns you to the previous form.
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            SelectionForm select = new SelectionForm();
+
+            select.Show();
+            this.Hide();
+
+            select.ReturnInfo();
+
+           
+        }
     }
 }

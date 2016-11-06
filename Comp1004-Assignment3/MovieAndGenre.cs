@@ -16,5 +16,7 @@ namespace Comp1004_Assignment3
 
         //Movie cost Info
         public string Cost { get; set; }
+
+        
     }
 }

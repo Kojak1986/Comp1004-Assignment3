@@ -125,6 +125,14 @@ namespace Comp1004_Assignment3
 
         }
 
+        //When back button is hit and selection form reloads, textboxes and lists are populated with previous selection
+         public void ReturnInfo()
+        {
+            TitleTextBox.Text = Program.info.Title;
+            GenreTextBox.Text = Program.info.Genre;
+            CostTextBox.Text = Program.info.Cost;
 
+            SelectionListBox.Text = TitleTextBox.Text;
+        }
     }
 }
