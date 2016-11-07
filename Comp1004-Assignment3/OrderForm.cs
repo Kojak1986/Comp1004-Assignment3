@@ -37,14 +37,9 @@ namespace Comp1004_Assignment3
             TitleTextBox.Text = Program.info.Title;
             GenreTextBox.Text = Program.info.Genre;
             CostTextBox.Text = Program.info.Cost;
-
-            //might not work
-            select.getPictures();
+            OrderPictureBox.Image = Program.info.Picture;
+           
             CalculateTotals();
-        
-
-
-
         }
 
         private void CalculateTotals()
@@ -71,6 +66,16 @@ namespace Comp1004_Assignment3
             select.ReturnInfo();
 
            
+        }
+
+        private void OrderDvdCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            double dvd = Convert.ToDouble((SubtotalTextBox.Text as string).TrimStart('$'));
+
+            dvd = dvd + 10;
+
+            SubtotalTextBox.Text = dvd.ToString("C2");
+            CalculateTotals();
         }
     }
 }

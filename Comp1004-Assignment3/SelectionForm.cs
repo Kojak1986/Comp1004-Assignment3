@@ -22,9 +22,10 @@ namespace Comp1004_Assignment3
         {
             NextButton.Enabled = true;
             TitleTextBox.Text = Convert.ToString(SelectionListBox.Text);
+            getPictures();
             SetInfo();
             SaveInfo();
-            getPictures();
+            
         }
 
         private void NextButton_Click(object sender, EventArgs e)
@@ -127,8 +128,115 @@ namespace Comp1004_Assignment3
 
         }
 
+        //Get the pictures for each title
+        public void getPictures()
+        {
+
+            if (TitleTextBox.Text == "Cedar Rapids")
+            {
+                SelectionPictureBox.Image = Properties.Resources.CedarRapids;
+                Program.info.Picture = Properties.Resources.CedarRapids;
+            }
+            if (TitleTextBox.Text == "Company Men")
+            {
+                SelectionPictureBox.Image = Properties.Resources.TheCompanyMen;
+                Program.info.Picture = Properties.Resources.TheCompanyMen;
+            }
+            if (TitleTextBox.Text == "Death Race 2")
+            {
+                SelectionPictureBox.Image = Properties.Resources.DeathRace2;
+                Program.info.Picture = Properties.Resources.DeathRace2;
+            }
+            if (TitleTextBox.Text == "Footloose")
+            {
+                SelectionPictureBox.Image = Properties.Resources.Footloose;
+                Program.info.Picture = Properties.Resources.Footloose;
+            }
+            if (TitleTextBox.Text == "Gnomeo and Juliet")
+            {
+                SelectionPictureBox.Image = Properties.Resources.GmoneoAndJuliet;
+                Program.info.Picture = Properties.Resources.GmoneoAndJuliet;
+            }
+            if (TitleTextBox.Text == "I am Number Four")
+            {
+                SelectionPictureBox.Image = Properties.Resources.IAmNum4;
+                Program.info.Picture = Properties.Resources.IAmNum4;
+            }
+            if (TitleTextBox.Text == "Just Go With It")
+            {
+                SelectionPictureBox.Image = Properties.Resources.JustGoWithIt;
+                Program.info.Picture = Properties.Resources.JustGoWithIt;
+            }
+            if (TitleTextBox.Text == "No Strings Attached")
+            {
+                SelectionPictureBox.Image = Properties.Resources.NoStrings;
+                Program.info.Picture = Properties.Resources.NoStrings;
+            }
+            if (TitleTextBox.Text == "Real Steel")
+            {
+                SelectionPictureBox.Image = Properties.Resources.RealSteel;
+                Program.info.Picture = Properties.Resources.RealSteel;
+            }
+            if (TitleTextBox.Text == "Sanctum")
+            {
+                SelectionPictureBox.Image = Properties.Resources.Sanctum;
+                Program.info.Picture = Properties.Resources.Sanctum;
+            }
+            if (TitleTextBox.Text == "Season of the Witch")
+            {
+                SelectionPictureBox.Image = Properties.Resources.SeasonOfTheWitch;
+                Program.info.Picture = Properties.Resources.SeasonOfTheWitch;
+            }
+            if (TitleTextBox.Text == "The Dilemma")
+            {
+                SelectionPictureBox.Image = Properties.Resources.TheDilemma;
+                Program.info.Picture = Properties.Resources.TheDilemma;
+            }
+            if (TitleTextBox.Text == "The Eagle")
+            {
+                SelectionPictureBox.Image = Properties.Resources.TheEagle;
+                Program.info.Picture = Properties.Resources.TheEagle;
+            }
+            if (TitleTextBox.Text == "The Green Hornet")
+            {
+                SelectionPictureBox.Image = Properties.Resources.TheGreenHornet;
+                Program.info.Picture = Properties.Resources.TheGreenHornet;
+            }
+            if (TitleTextBox.Text == "The Mechanic")
+            {
+                SelectionPictureBox.Image = Properties.Resources.TheMechanic;
+                Program.info.Picture = Properties.Resources.TheMechanic;
+            }        
+            if (TitleTextBox.Text == "The Other Woman")
+            {
+                SelectionPictureBox.Image = Properties.Resources.TheOtherWoman;
+                Program.info.Picture = Properties.Resources.TheOtherWoman;
+            }
+            if (TitleTextBox.Text == "The Rite")
+            {
+                SelectionPictureBox.Image = Properties.Resources.TheRite;
+                Program.info.Picture = Properties.Resources.TheRite;
+            }
+            if (TitleTextBox.Text == "The Roommate")
+            {
+                SelectionPictureBox.Image = Properties.Resources.TheRoommate;
+                Program.info.Picture = Properties.Resources.TheRoommate;
+            }
+            if (TitleTextBox.Text == "The Way Back")
+            {
+                SelectionPictureBox.Image = Properties.Resources.TheWayBack;
+                Program.info.Picture = Properties.Resources.TheWayBack;
+            }
+            if (TitleTextBox.Text == "Waiting for Forever")
+            {
+                SelectionPictureBox.Image = Properties.Resources.WaitingForForever;
+                Program.info.Picture = Properties.Resources.WaitingForForever;
+            }
+
+        }
+
         //When back button is hit and selection form reloads, textboxes and lists are populated with previous selection
-         public void ReturnInfo()
+        public void ReturnInfo()
         {
             TitleTextBox.Text = Program.info.Title;
             GenreTextBox.Text = Program.info.Genre;
@@ -137,96 +245,7 @@ namespace Comp1004_Assignment3
             SelectionListBox.Text = TitleTextBox.Text;
         }
 
-        //Get the pictures for each title
-        public void getPictures()
-        {
-            
-            if (TitleTextBox.Text == "Cedar Rapids")
-            {
-                SelectionPictureBox.Image = Properties.Resources.CedarRapids;
-                
-            }
-            if (TitleTextBox.Text == "Company Men")
-            {
-                SelectionPictureBox.Image = Properties.Resources.TheCompanyMen;
-            }
-            if (TitleTextBox.Text == "Death Race 2")
-            {
-                SelectionPictureBox.Image = Properties.Resources.DeathRace2;
-            }
-            if (TitleTextBox.Text == "Footloose")
-            {
-                SelectionPictureBox.Image = Properties.Resources.Footloose;
-            }
-            if (TitleTextBox.Text == "Death Race 2")
-            {
-                SelectionPictureBox.Image = Properties.Resources.DeathRace2;
-            }
-            if (TitleTextBox.Text == "Gnomeo and Juliet")
-            {
-                SelectionPictureBox.Image = Properties.Resources.GmoneoAndJuliet;
-            }
-            if (TitleTextBox.Text == "I am Number Four")
-            {
-                SelectionPictureBox.Image = Properties.Resources.IAmNum4;
-            }
-            if (TitleTextBox.Text == "Just Go With It")
-            {
-                SelectionPictureBox.Image = Properties.Resources.JustGoWithIt;
-            }
-            if (TitleTextBox.Text == "No Strings Attached")
-            {
-                SelectionPictureBox.Image = Properties.Resources.NoStrings;
-            }
-            if (TitleTextBox.Text == "Real Steel")
-            {
-                SelectionPictureBox.Image = Properties.Resources.RealSteel;
-            }
-            if (TitleTextBox.Text == "Sanctum")
-            {
-                SelectionPictureBox.Image = Properties.Resources.Sanctum;
-            }
-            if (TitleTextBox.Text == "Season of the Witch")
-            {
-                SelectionPictureBox.Image = Properties.Resources.SeasonOfTheWitch;
-            }
-            if (TitleTextBox.Text == "The Dilemma")
-            {
-                SelectionPictureBox.Image = Properties.Resources.TheDilemma;
-            }
-            if (TitleTextBox.Text == "The Eagle")
-            {
-                SelectionPictureBox.Image = Properties.Resources.TheEagle;
-            }
-            if (TitleTextBox.Text == "The Green Hornet")
-            {
-                SelectionPictureBox.Image = Properties.Resources.TheGreenHornet;
-            }
-            if (TitleTextBox.Text == "The Mechanic")
-            {
-                SelectionPictureBox.Image = Properties.Resources.TheMechanic;
-            }
-            if (TitleTextBox.Text == "The Other Woman")
-            {
-                SelectionPictureBox.Image = Properties.Resources.TheOtherWoman;
-            }
-            if (TitleTextBox.Text == "The Rite")
-            {
-                SelectionPictureBox.Image = Properties.Resources.TheRite;
-            }
-            if (TitleTextBox.Text == "The Roommate")
-            {
-                SelectionPictureBox.Image = Properties.Resources.TheRoommate;
-            }
-            if (TitleTextBox.Text == "The Way Back")
-            {
-                SelectionPictureBox.Image = Properties.Resources.TheWayBack;
-            }
-            if (TitleTextBox.Text == "Waiting for Forever")
-            {
-                SelectionPictureBox.Image = Properties.Resources.WaitingForForever;
-            }
-           
-        }
+        
+        
     }
 }

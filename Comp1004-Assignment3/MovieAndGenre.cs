@@ -17,6 +17,6 @@ namespace Comp1004_Assignment3
         //Movie cost Info
         public string Cost { get; set; }
 
-        
+        public System.Drawing.Bitmap Picture { get; set; }
     }
 }
