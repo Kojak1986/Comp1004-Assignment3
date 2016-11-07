@@ -80,6 +80,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SelectionForm.resx">
       <DependentUpon>SelectionForm.cs</DependentUpon>
@@ -99,6 +100,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CedarRapids.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeathRace2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Footloose.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GmoneoAndJuliet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IAmNum4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JustGoWithIt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RealSteel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sanctum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SeasonOfTheWitch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheCompanyMen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheDilemma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheEagle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheGreenHornet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheMechanic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheOtherWoman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheRite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheRoommate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheWayBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WaitingForForever.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoStrings.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

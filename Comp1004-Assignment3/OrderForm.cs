@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Comp1004_Assignment3
 {
    
     public partial class OrderForm : Form
     {
-        
+        SelectionForm select = new SelectionForm();
         public OrderForm()
         {
             InitializeComponent();
@@ -32,14 +33,18 @@ namespace Comp1004_Assignment3
         private void OrderForm_Load(object sender, EventArgs e)
         {
             
+
             TitleTextBox.Text = Program.info.Title;
             GenreTextBox.Text = Program.info.Genre;
             CostTextBox.Text = Program.info.Cost;
 
+            //might not work
+            select.getPictures();
             CalculateTotals();
+        
 
-            
-            
+
+
         }
 
         private void CalculateTotals()
@@ -58,7 +63,7 @@ namespace Comp1004_Assignment3
         //Back button returns you to the previous form.
         private void BackButton_Click(object sender, EventArgs e)
         {
-            SelectionForm select = new SelectionForm();
+            
 
             select.Show();
             this.Hide();

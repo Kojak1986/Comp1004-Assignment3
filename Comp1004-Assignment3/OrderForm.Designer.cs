@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.MovieSelectedGroupBox = new System.Windows.Forms.GroupBox();
-            this.MoviePictureBox = new System.Windows.Forms.PictureBox();
+            this.OrderPictureBox = new System.Windows.Forms.PictureBox();
             this.GenreTextBox = new System.Windows.Forms.TextBox();
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.GenreLabel = new System.Windows.Forms.Label();
@@ -55,14 +55,14 @@
             this.StreamButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.MovieSelectedGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MoviePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderPictureBox)).BeginInit();
             this.YourOrderGroupBox.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MovieSelectedGroupBox
             // 
-            this.MovieSelectedGroupBox.Controls.Add(this.MoviePictureBox);
+            this.MovieSelectedGroupBox.Controls.Add(this.OrderPictureBox);
             this.MovieSelectedGroupBox.Controls.Add(this.GenreTextBox);
             this.MovieSelectedGroupBox.Controls.Add(this.TitleTextBox);
             this.MovieSelectedGroupBox.Controls.Add(this.GenreLabel);
@@ -74,38 +74,40 @@
             this.MovieSelectedGroupBox.TabStop = false;
             this.MovieSelectedGroupBox.Text = "Movie Selected";
             // 
-            // MoviePictureBox
+            // OrderPictureBox
             // 
-            this.MoviePictureBox.Location = new System.Drawing.Point(41, 152);
-            this.MoviePictureBox.Name = "MoviePictureBox";
-            this.MoviePictureBox.Size = new System.Drawing.Size(243, 238);
-            this.MoviePictureBox.TabIndex = 4;
-            this.MoviePictureBox.TabStop = false;
+            this.OrderPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.OrderPictureBox.Location = new System.Drawing.Point(62, 152);
+            this.OrderPictureBox.Name = "OrderPictureBox";
+            this.OrderPictureBox.Size = new System.Drawing.Size(208, 238);
+            this.OrderPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.OrderPictureBox.TabIndex = 4;
+            this.OrderPictureBox.TabStop = false;
             // 
             // GenreTextBox
             // 
             this.GenreTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.GenreTextBox.Enabled = false;
-            this.GenreTextBox.Location = new System.Drawing.Point(41, 110);
+            this.GenreTextBox.Location = new System.Drawing.Point(62, 110);
             this.GenreTextBox.Name = "GenreTextBox";
             this.GenreTextBox.ReadOnly = true;
-            this.GenreTextBox.Size = new System.Drawing.Size(243, 26);
+            this.GenreTextBox.Size = new System.Drawing.Size(208, 26);
             this.GenreTextBox.TabIndex = 3;
             // 
             // TitleTextBox
             // 
             this.TitleTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.TitleTextBox.Enabled = false;
-            this.TitleTextBox.Location = new System.Drawing.Point(41, 55);
+            this.TitleTextBox.Location = new System.Drawing.Point(62, 55);
             this.TitleTextBox.Name = "TitleTextBox";
             this.TitleTextBox.ReadOnly = true;
-            this.TitleTextBox.Size = new System.Drawing.Size(243, 26);
+            this.TitleTextBox.Size = new System.Drawing.Size(208, 26);
             this.TitleTextBox.TabIndex = 2;
             // 
             // GenreLabel
             // 
             this.GenreLabel.AutoSize = true;
-            this.GenreLabel.Location = new System.Drawing.Point(37, 88);
+            this.GenreLabel.Location = new System.Drawing.Point(58, 88);
             this.GenreLabel.Name = "GenreLabel";
             this.GenreLabel.Size = new System.Drawing.Size(46, 19);
             this.GenreLabel.TabIndex = 1;
@@ -114,7 +116,7 @@
             // TitleLabel
             // 
             this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Location = new System.Drawing.Point(37, 33);
+            this.TitleLabel.Location = new System.Drawing.Point(58, 33);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(34, 19);
             this.TitleLabel.TabIndex = 0;
@@ -333,7 +335,7 @@
             this.Load += new System.EventHandler(this.OrderForm_Load);
             this.MovieSelectedGroupBox.ResumeLayout(false);
             this.MovieSelectedGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.MoviePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderPictureBox)).EndInit();
             this.YourOrderGroupBox.ResumeLayout(false);
             this.YourOrderGroupBox.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -357,7 +359,7 @@
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button StreamButton;
         private System.Windows.Forms.Button CancelButton;
-        private System.Windows.Forms.PictureBox MoviePictureBox;
+        private System.Windows.Forms.PictureBox OrderPictureBox;
         private System.Windows.Forms.TextBox GenreTextBox;
         private System.Windows.Forms.TextBox TitleTextBox;
         private System.Windows.Forms.Label GenreLabel;

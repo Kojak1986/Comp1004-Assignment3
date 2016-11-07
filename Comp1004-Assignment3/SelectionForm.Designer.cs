@@ -190,6 +190,7 @@
             this.SelectionPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.SelectionPictureBox.Name = "SelectionPictureBox";
             this.SelectionPictureBox.Size = new System.Drawing.Size(186, 224);
+            this.SelectionPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SelectionPictureBox.TabIndex = 0;
             this.SelectionPictureBox.TabStop = false;
             // 
