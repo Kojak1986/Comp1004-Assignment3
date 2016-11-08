@@ -61,6 +61,7 @@ namespace Comp1004_Assignment3
                 SubtotalTextBox.Text = CostTextBox.Text;
                 SalesTaxTextBox.Text = TotalTax.ToString("C2");
                 GrandTotalTextBox.Text = Grand.ToString("C2");
+                Program.info.GrandTotal = GrandTotalTextBox.Text;
 
             }
             else if(OrderDvdCheckBox.Checked == false)
@@ -75,6 +76,7 @@ namespace Comp1004_Assignment3
                 SubtotalTextBox.Text = CostTextBox.Text;
                 SalesTaxTextBox.Text = TotalTax.ToString("C2");
                 GrandTotalTextBox.Text = Grand.ToString("C2");
+                Program.info.GrandTotal = GrandTotalTextBox.Text;
             }
 
         }
@@ -97,6 +99,13 @@ namespace Comp1004_Assignment3
           
             
             
+        }
+
+        private void StreamButton_Click(object sender, EventArgs e)
+        {
+            StreamForm stream = new StreamForm();
+            stream.Show();
+            this.Hide();
         }
     }
 }

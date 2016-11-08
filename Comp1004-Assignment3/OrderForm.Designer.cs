@@ -62,6 +62,7 @@
             // 
             // MovieSelectedGroupBox
             // 
+            this.MovieSelectedGroupBox.BackColor = System.Drawing.Color.Transparent;
             this.MovieSelectedGroupBox.Controls.Add(this.OrderPictureBox);
             this.MovieSelectedGroupBox.Controls.Add(this.GenreTextBox);
             this.MovieSelectedGroupBox.Controls.Add(this.TitleTextBox);
@@ -86,23 +87,23 @@
             // 
             // GenreTextBox
             // 
-            this.GenreTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.GenreTextBox.Enabled = false;
+            this.GenreTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.GenreTextBox.Location = new System.Drawing.Point(62, 110);
             this.GenreTextBox.Name = "GenreTextBox";
             this.GenreTextBox.ReadOnly = true;
             this.GenreTextBox.Size = new System.Drawing.Size(208, 26);
             this.GenreTextBox.TabIndex = 3;
+            this.GenreTextBox.TabStop = false;
             // 
             // TitleTextBox
             // 
-            this.TitleTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.TitleTextBox.Enabled = false;
+            this.TitleTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.TitleTextBox.Location = new System.Drawing.Point(62, 55);
             this.TitleTextBox.Name = "TitleTextBox";
             this.TitleTextBox.ReadOnly = true;
             this.TitleTextBox.Size = new System.Drawing.Size(208, 26);
             this.TitleTextBox.TabIndex = 2;
+            this.TitleTextBox.TabStop = false;
             // 
             // GenreLabel
             // 
@@ -124,6 +125,7 @@
             // 
             // YourOrderGroupBox
             // 
+            this.YourOrderGroupBox.BackColor = System.Drawing.Color.Transparent;
             this.YourOrderGroupBox.Controls.Add(this.SubtotalTextBox);
             this.YourOrderGroupBox.Controls.Add(this.SalesTaxTextBox);
             this.YourOrderGroupBox.Controls.Add(this.GrandTotalTextBox);
@@ -142,43 +144,43 @@
             // 
             // SubtotalTextBox
             // 
-            this.SubtotalTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.SubtotalTextBox.Enabled = false;
+            this.SubtotalTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.SubtotalTextBox.Location = new System.Drawing.Point(181, 82);
             this.SubtotalTextBox.Name = "SubtotalTextBox";
             this.SubtotalTextBox.ReadOnly = true;
             this.SubtotalTextBox.Size = new System.Drawing.Size(100, 26);
             this.SubtotalTextBox.TabIndex = 9;
+            this.SubtotalTextBox.TabStop = false;
             // 
             // SalesTaxTextBox
             // 
-            this.SalesTaxTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.SalesTaxTextBox.Enabled = false;
+            this.SalesTaxTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.SalesTaxTextBox.Location = new System.Drawing.Point(181, 129);
             this.SalesTaxTextBox.Name = "SalesTaxTextBox";
             this.SalesTaxTextBox.ReadOnly = true;
             this.SalesTaxTextBox.Size = new System.Drawing.Size(100, 26);
             this.SalesTaxTextBox.TabIndex = 8;
+            this.SalesTaxTextBox.TabStop = false;
             // 
             // GrandTotalTextBox
             // 
-            this.GrandTotalTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.GrandTotalTextBox.Enabled = false;
+            this.GrandTotalTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.GrandTotalTextBox.Location = new System.Drawing.Point(181, 176);
             this.GrandTotalTextBox.Name = "GrandTotalTextBox";
             this.GrandTotalTextBox.ReadOnly = true;
             this.GrandTotalTextBox.Size = new System.Drawing.Size(100, 26);
             this.GrandTotalTextBox.TabIndex = 7;
+            this.GrandTotalTextBox.TabStop = false;
             // 
             // CostTextBox
             // 
-            this.CostTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.CostTextBox.Enabled = false;
+            this.CostTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.CostTextBox.Location = new System.Drawing.Point(181, 35);
             this.CostTextBox.Name = "CostTextBox";
             this.CostTextBox.ReadOnly = true;
             this.CostTextBox.Size = new System.Drawing.Size(100, 26);
             this.CostTextBox.TabIndex = 6;
+            this.CostTextBox.TabStop = false;
             // 
             // OrderDvdCheckBox
             // 
@@ -229,7 +231,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
@@ -301,6 +303,7 @@
             this.StreamButton.TabIndex = 4;
             this.StreamButton.Text = "Stream";
             this.StreamButton.UseVisualStyleBackColor = true;
+            this.StreamButton.Click += new System.EventHandler(this.StreamButton_Click);
             // 
             // CancelButton
             // 
@@ -317,7 +320,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackgroundImage = global::Comp1004_Assignment3.Properties.Resources.MovieBackGround3;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(706, 435);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.StreamButton);

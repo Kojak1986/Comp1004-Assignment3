@@ -17,6 +17,12 @@ namespace Comp1004_Assignment3
         //Movie cost Info
         public string Cost { get; set; }
 
+        //Movie Grand total info
+        public string GrandTotal { get; set; }
+
+        //Movie picture
         public System.Drawing.Bitmap Picture { get; set; }
+
+        
     }
 }
