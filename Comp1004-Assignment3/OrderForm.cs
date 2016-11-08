@@ -20,16 +20,19 @@ namespace Comp1004_Assignment3
             InitializeComponent();
         }
 
+        //Cancel button closes the form
         private void CancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
+        //X closes the form
         private void OrderForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
+        //When the form loads populate with info saved from the last form
         private void OrderForm_Load(object sender, EventArgs e)
         {
 
@@ -42,15 +45,17 @@ namespace Comp1004_Assignment3
             CalculateTotals();
         }
 
+        //Method will calculate the totals of the movie depending on whether or not the add dvd box is checked
         private void CalculateTotals()
         {
-            
-            double TotalTax = Convert.ToDouble((CostTextBox.Text as string).TrimStart('$'));
-            double Grand = TotalTax * 1.13;
-
+         
             if (OrderDvdCheckBox.Checked == true)
             {
+                double TotalTax = Convert.ToDouble((CostTextBox.Text as string).TrimStart('$'));
                 double DvdCost = TotalTax + 10;
+                
+                TotalTax = DvdCost * 0.13;
+                double Grand = TotalTax + DvdCost;
 
                 CostTextBox.Text = DvdCost.ToString("C2");
                 SubtotalTextBox.Text = CostTextBox.Text;
@@ -60,8 +65,12 @@ namespace Comp1004_Assignment3
             }
             else if(OrderDvdCheckBox.Checked == false)
             {
-
+                CostTextBox.Text = Program.info.Cost;
+                double TotalTax = Convert.ToDouble((CostTextBox.Text as string).TrimStart('$'));
+                double Grand = TotalTax * 1.13;
                 TotalTax = TotalTax * 0.13;
+                
+
 
                 SubtotalTextBox.Text = CostTextBox.Text;
                 SalesTaxTextBox.Text = TotalTax.ToString("C2");
@@ -73,19 +82,21 @@ namespace Comp1004_Assignment3
         //Back button returns you to the previous form.
         private void BackButton_Click(object sender, EventArgs e)
         {
-
-
             select.Show();
             this.Hide();
-
             select.ReturnInfo();
 
 
         }
 
+        //When check box is checked run the calculate totals method
         private void OrderDvdCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            CalculateTotals();
+           
+                CalculateTotals();
+          
+            
+            
         }
     }
 }

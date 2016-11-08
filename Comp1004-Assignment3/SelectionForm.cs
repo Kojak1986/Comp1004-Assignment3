@@ -18,6 +18,7 @@ namespace Comp1004_Assignment3
             InitializeComponent();
         }
 
+        //Selection enables the next button and gets and saves the info from the selection
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             NextButton.Enabled = true;
@@ -28,6 +29,7 @@ namespace Comp1004_Assignment3
             
         }
 
+        //Next button takes you to the next form and hides this one
         private void NextButton_Click(object sender, EventArgs e)
         {
             OrderForm order = new OrderForm();
@@ -36,6 +38,7 @@ namespace Comp1004_Assignment3
             this.Hide();
         }
 
+        // Nethod that is called to save the info once choice is selected
         private void SaveInfo()
         {
             
