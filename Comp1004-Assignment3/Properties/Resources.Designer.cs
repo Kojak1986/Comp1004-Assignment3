@@ -123,16 +123,6 @@ namespace Comp1004_Assignment3.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MovieBackGround2 {
-            get {
-                object obj = ResourceManager.GetObject("MovieBackGround2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap MovieBackGround3 {
             get {
                 object obj = ResourceManager.GetObject("MovieBackGround3", resourceCulture);

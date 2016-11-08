@@ -285,35 +285,38 @@
             // 
             // BackButton
             // 
+            this.BackButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackButton.Location = new System.Drawing.Point(365, 390);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(82, 33);
             this.BackButton.TabIndex = 3;
             this.BackButton.Text = "Back";
-            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // StreamButton
             // 
+            this.StreamButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.StreamButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StreamButton.Location = new System.Drawing.Point(612, 390);
             this.StreamButton.Name = "StreamButton";
             this.StreamButton.Size = new System.Drawing.Size(82, 33);
             this.StreamButton.TabIndex = 4;
             this.StreamButton.Text = "Stream";
-            this.StreamButton.UseVisualStyleBackColor = true;
+            this.StreamButton.UseVisualStyleBackColor = false;
             this.StreamButton.Click += new System.EventHandler(this.StreamButton_Click);
             // 
             // CancelButton
             // 
+            this.CancelButton.BackColor = System.Drawing.SystemColors.ControlLight;
             this.CancelButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelButton.Location = new System.Drawing.Point(524, 390);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(82, 33);
             this.CancelButton.TabIndex = 5;
             this.CancelButton.Text = "Cancel";
-            this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.UseVisualStyleBackColor = false;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // OrderForm
@@ -331,7 +334,7 @@
             this.Controls.Add(this.MovieSelectedGroupBox);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OrderForm";

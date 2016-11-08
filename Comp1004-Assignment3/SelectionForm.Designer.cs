@@ -38,15 +38,15 @@
             this.GenreLabel = new System.Windows.Forms.Label();
             this.TitleTextBox = new System.Windows.Forms.TextBox();
             this.MovieTitleLabel = new System.Windows.Forms.Label();
-            this.NextButton = new System.Windows.Forms.Button();
             this.SelectionPictureBox = new System.Windows.Forms.PictureBox();
+            this.NextButton = new System.Windows.Forms.Button();
             this.SelectGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SelectionPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // SelectionListBox
             // 
-            this.SelectionListBox.BackColor = System.Drawing.Color.DimGray;
+            this.SelectionListBox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.SelectionListBox.ForeColor = System.Drawing.SystemColors.MenuText;
             this.SelectionListBox.FormattingEnabled = true;
             this.SelectionListBox.ItemHeight = 19;
@@ -118,7 +118,7 @@
             this.SelectGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.SelectGroupBox.Name = "SelectGroupBox";
             this.SelectGroupBox.Padding = new System.Windows.Forms.Padding(4);
-            this.SelectGroupBox.Size = new System.Drawing.Size(466, 261);
+            this.SelectGroupBox.Size = new System.Drawing.Size(454, 261);
             this.SelectGroupBox.TabIndex = 3;
             this.SelectGroupBox.TabStop = false;
             this.SelectGroupBox.Text = "Your Selection";
@@ -186,18 +186,6 @@
             this.MovieTitleLabel.TabIndex = 1;
             this.MovieTitleLabel.Text = "Title";
             // 
-            // NextButton
-            // 
-            this.NextButton.Enabled = false;
-            this.NextButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextButton.Location = new System.Drawing.Point(611, 387);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(82, 33);
-            this.NextButton.TabIndex = 4;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
-            // 
             // SelectionPictureBox
             // 
             this.SelectionPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -209,13 +197,27 @@
             this.SelectionPictureBox.TabIndex = 0;
             this.SelectionPictureBox.TabStop = false;
             // 
+            // NextButton
+            // 
+            this.NextButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.NextButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.NextButton.Enabled = false;
+            this.NextButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextButton.Location = new System.Drawing.Point(611, 387);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(82, 33);
+            this.NextButton.TabIndex = 4;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = false;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            // 
             // SelectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BackgroundImage = global::Comp1004_Assignment3.Properties.Resources.MovieBackGround3;
-            this.ClientSize = new System.Drawing.Size(698, 427);
+            this.ClientSize = new System.Drawing.Size(694, 423);
             this.ControlBox = false;
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.SelectGroupBox);
@@ -224,7 +226,7 @@
             this.Controls.Add(this.SelectionListBox);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
