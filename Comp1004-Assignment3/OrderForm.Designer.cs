@@ -78,9 +78,9 @@
             // OrderPictureBox
             // 
             this.OrderPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.OrderPictureBox.Location = new System.Drawing.Point(62, 152);
+            this.OrderPictureBox.Location = new System.Drawing.Point(62, 136);
             this.OrderPictureBox.Name = "OrderPictureBox";
-            this.OrderPictureBox.Size = new System.Drawing.Size(208, 238);
+            this.OrderPictureBox.Size = new System.Drawing.Size(208, 254);
             this.OrderPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.OrderPictureBox.TabIndex = 4;
             this.OrderPictureBox.TabStop = false;
@@ -88,7 +88,7 @@
             // GenreTextBox
             // 
             this.GenreTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.GenreTextBox.Location = new System.Drawing.Point(62, 110);
+            this.GenreTextBox.Location = new System.Drawing.Point(62, 104);
             this.GenreTextBox.Name = "GenreTextBox";
             this.GenreTextBox.ReadOnly = true;
             this.GenreTextBox.Size = new System.Drawing.Size(208, 26);
@@ -98,7 +98,7 @@
             // TitleTextBox
             // 
             this.TitleTextBox.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.TitleTextBox.Location = new System.Drawing.Point(62, 55);
+            this.TitleTextBox.Location = new System.Drawing.Point(62, 44);
             this.TitleTextBox.Name = "TitleTextBox";
             this.TitleTextBox.ReadOnly = true;
             this.TitleTextBox.Size = new System.Drawing.Size(208, 26);
@@ -108,7 +108,7 @@
             // GenreLabel
             // 
             this.GenreLabel.AutoSize = true;
-            this.GenreLabel.Location = new System.Drawing.Point(58, 88);
+            this.GenreLabel.Location = new System.Drawing.Point(58, 82);
             this.GenreLabel.Name = "GenreLabel";
             this.GenreLabel.Size = new System.Drawing.Size(46, 19);
             this.GenreLabel.TabIndex = 1;
@@ -117,7 +117,7 @@
             // TitleLabel
             // 
             this.TitleLabel.AutoSize = true;
-            this.TitleLabel.Location = new System.Drawing.Point(58, 33);
+            this.TitleLabel.Location = new System.Drawing.Point(58, 22);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(34, 19);
             this.TitleLabel.TabIndex = 0;

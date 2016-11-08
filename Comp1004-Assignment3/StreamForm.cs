@@ -20,9 +20,12 @@ namespace Comp1004_Assignment3
             
         }
 
+        //Ok button loads what would be the movie. In this case its to show and enjoy the movie form
         private void StreamOkButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            GoodByeForm bye = new GoodByeForm();
+            bye.Show();
+            this.Hide();
         }
 
         //When the form loads it will grab your selection and show you a receipt
@@ -31,7 +34,7 @@ namespace Comp1004_Assignment3
 
             ProgressTimer.Start();
             
-            StreamTextBox.Text = "Thank you for choosing Movie Bananza!" + "\r\n" + "Your movie is: " + Program.info.Title + "\r\n"
+            StreamLabel.Text = "Thank you for choosing Movie Bananza!" + "\r\n" + "Your movie is: " + Program.info.Title + "\r\n"
                 + "Your cost is: " + Program.info.GrandTotal + "\r\n" + "Your movie will begin shortly!";
 
            
@@ -42,15 +45,16 @@ namespace Comp1004_Assignment3
             Application.Exit();
         }
 
+        //Timer loads the progress bar. When finished the button and label will appear
         private void ProgressTimer_Tick(object sender, EventArgs e)
         {
             StreamProgressBar.Increment(1);
             if(StreamProgressBar.Value == 100)
             {
                 ProgressTimer.Stop();
-                GoodByeForm bye = new GoodByeForm();
-                bye.Show();
-                this.Hide();
+                StreamOkButton.Show();
+                MovieReadyLabel.Show();
+                StreamProgressBar.Hide();
 
                 
 
