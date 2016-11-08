@@ -39,7 +39,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(53, 80);
+            this.label1.Location = new System.Drawing.Point(70, 121);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(254, 23);
             this.label1.TabIndex = 0;
@@ -57,7 +57,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Comp1004_Assignment3.Properties.Resources.MovieBackGround3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(363, 188);
+            this.ClientSize = new System.Drawing.Size(395, 266);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashForm";

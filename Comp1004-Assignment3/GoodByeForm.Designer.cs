@@ -38,7 +38,7 @@
             this.GoodByeLabel.AutoSize = true;
             this.GoodByeLabel.BackColor = System.Drawing.Color.Transparent;
             this.GoodByeLabel.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoodByeLabel.Location = new System.Drawing.Point(117, 99);
+            this.GoodByeLabel.Location = new System.Drawing.Point(115, 116);
             this.GoodByeLabel.Name = "GoodByeLabel";
             this.GoodByeLabel.Size = new System.Drawing.Size(176, 23);
             this.GoodByeLabel.TabIndex = 0;
@@ -55,7 +55,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Comp1004_Assignment3.Properties.Resources.MovieBackGround3;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(379, 227);
+            this.ClientSize = new System.Drawing.Size(395, 266);
             this.Controls.Add(this.GoodByeLabel);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
