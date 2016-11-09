@@ -34,7 +34,7 @@ namespace Comp1004_Assignment3
 
             ProgressTimer.Start();
             
-            StreamLabel.Text = "Thank you for choosing Movie Bananza!" + "\r\n" + "Your movie is: " + Program.info.Title + "\r\n"
+            StreamLabel.Text = "Thank you for choosing Movie Bonanza!" + "\r\n" + "Your movie is: " + Program.info.Title + "\r\n"
                 + "Your cost is: " + Program.info.GrandTotal + "\r\n" + "Your movie will begin shortly!";
 
            

@@ -51,14 +51,17 @@ namespace Comp1004_Assignment3
          
             if (OrderDvdCheckBox.Checked == true)
             {
+                DvdLabel.Show();
+                DvdCostTextBox.Show();
                 double TotalTax = Convert.ToDouble((CostTextBox.Text as string).TrimStart('$'));
                 double DvdCost = TotalTax + 10;
+                
                 
                 TotalTax = DvdCost * 0.13;
                 double Grand = TotalTax + DvdCost;
 
-                CostTextBox.Text = DvdCost.ToString("C2");
-                SubtotalTextBox.Text = CostTextBox.Text;
+                
+                SubtotalTextBox.Text = DvdCost.ToString("C2");
                 SalesTaxTextBox.Text = TotalTax.ToString("C2");
                 GrandTotalTextBox.Text = Grand.ToString("C2");
                 Program.info.GrandTotal = GrandTotalTextBox.Text;
@@ -66,6 +69,8 @@ namespace Comp1004_Assignment3
             }
             else if(OrderDvdCheckBox.Checked == false)
             {
+                DvdLabel.Hide();
+                DvdCostTextBox.Hide();
                 CostTextBox.Text = Program.info.Cost;
                 double TotalTax = Convert.ToDouble((CostTextBox.Text as string).TrimStart('$'));
                 double Grand = TotalTax * 1.13;
@@ -94,8 +99,8 @@ namespace Comp1004_Assignment3
         //When check box is checked run the calculate totals method
         private void OrderDvdCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-           
-                CalculateTotals();
+            
+            CalculateTotals();
           
             
             
@@ -110,7 +115,8 @@ namespace Comp1004_Assignment3
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Your receipt is being printed!", "Movie Bananza");
+             MessageBox.Show("Your receipt is being printed!", "Movie Bananza");
+            
         }
 
         private void streamToolStripMenuItem_Click(object sender, EventArgs e)
@@ -126,7 +132,8 @@ namespace Comp1004_Assignment3
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Developer: Karl Kovacs" + "\r\n" + 
-                "Version: 3.0", "Info");
+                "Version: 3.0" + "\r\n" + "Website: www.moviebonanza.com" + "\r\n" +
+                "Phone: 1-800-739-2934 ","About");
         }
     }
 }
