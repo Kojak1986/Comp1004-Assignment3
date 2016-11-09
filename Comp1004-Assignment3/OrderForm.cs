@@ -107,5 +107,26 @@ namespace Comp1004_Assignment3
             stream.Show();
             this.Hide();
         }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Your receipt is being printed!", "Movie Bananza");
+        }
+
+        private void streamToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StreamButton.PerformClick();
+        }
+
+        private void cancelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CancelButton.PerformClick();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Developer: Karl Kovacs" + "\r\n" + 
+                "Version: 3.0", "Info");
+        }
     }
 }
