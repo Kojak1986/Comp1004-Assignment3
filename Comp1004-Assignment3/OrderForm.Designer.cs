@@ -205,20 +205,20 @@
             // SalesTaxLabel
             // 
             this.SalesTaxLabel.AutoSize = true;
-            this.SalesTaxLabel.Location = new System.Drawing.Point(71, 132);
+            this.SalesTaxLabel.Location = new System.Drawing.Point(58, 132);
             this.SalesTaxLabel.Name = "SalesTaxLabel";
-            this.SalesTaxLabel.Size = new System.Drawing.Size(96, 19);
+            this.SalesTaxLabel.Size = new System.Drawing.Size(109, 19);
             this.SalesTaxLabel.TabIndex = 2;
-            this.SalesTaxLabel.Text = "SalesTax (13):";
+            this.SalesTaxLabel.Text = "SalesTax (13%):";
             // 
             // SubTotalLabel
             // 
             this.SubTotalLabel.AutoSize = true;
             this.SubTotalLabel.Location = new System.Drawing.Point(97, 85);
             this.SubTotalLabel.Name = "SubTotalLabel";
-            this.SubTotalLabel.Size = new System.Drawing.Size(70, 19);
+            this.SubTotalLabel.Size = new System.Drawing.Size(72, 19);
             this.SubTotalLabel.TabIndex = 1;
-            this.SubTotalLabel.Text = "Sub Total:";
+            this.SubTotalLabel.Text = "Sub-Total:";
             // 
             // CostLabel
             // 
@@ -280,7 +280,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // BackButton
