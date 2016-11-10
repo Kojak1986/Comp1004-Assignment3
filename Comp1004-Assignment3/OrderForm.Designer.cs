@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderForm));
             this.MovieSelectedGroupBox = new System.Windows.Forms.GroupBox();
             this.OrderPictureBox = new System.Windows.Forms.PictureBox();
             this.GenreTextBox = new System.Windows.Forms.TextBox();
@@ -35,6 +36,8 @@
             this.GenreLabel = new System.Windows.Forms.Label();
             this.TitleLabel = new System.Windows.Forms.Label();
             this.YourOrderGroupBox = new System.Windows.Forms.GroupBox();
+            this.DvdLabel = new System.Windows.Forms.Label();
+            this.DvdCostTextBox = new System.Windows.Forms.TextBox();
             this.SubtotalTextBox = new System.Windows.Forms.TextBox();
             this.SalesTaxTextBox = new System.Windows.Forms.TextBox();
             this.GrandTotalTextBox = new System.Windows.Forms.TextBox();
@@ -44,7 +47,7 @@
             this.SalesTaxLabel = new System.Windows.Forms.Label();
             this.SubTotalLabel = new System.Windows.Forms.Label();
             this.CostLabel = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.OrderMenuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.streamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,12 +57,11 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.StreamButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
-            this.DvdCostTextBox = new System.Windows.Forms.TextBox();
-            this.DvdLabel = new System.Windows.Forms.Label();
+            this.OrderFormPrintPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
             this.MovieSelectedGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrderPictureBox)).BeginInit();
             this.YourOrderGroupBox.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.OrderMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // MovieSelectedGroupBox
@@ -145,6 +147,26 @@
             this.YourOrderGroupBox.TabIndex = 1;
             this.YourOrderGroupBox.TabStop = false;
             this.YourOrderGroupBox.Text = "Your Order";
+            // 
+            // DvdLabel
+            // 
+            this.DvdLabel.AutoSize = true;
+            this.DvdLabel.Location = new System.Drawing.Point(89, 82);
+            this.DvdLabel.Name = "DvdLabel";
+            this.DvdLabel.Size = new System.Drawing.Size(78, 19);
+            this.DvdLabel.TabIndex = 11;
+            this.DvdLabel.Text = "DVD Cost:";
+            this.DvdLabel.Visible = false;
+            // 
+            // DvdCostTextBox
+            // 
+            this.DvdCostTextBox.Location = new System.Drawing.Point(181, 79);
+            this.DvdCostTextBox.Name = "DvdCostTextBox";
+            this.DvdCostTextBox.ReadOnly = true;
+            this.DvdCostTextBox.Size = new System.Drawing.Size(100, 26);
+            this.DvdCostTextBox.TabIndex = 10;
+            this.DvdCostTextBox.Text = "$10.00";
+            this.DvdCostTextBox.Visible = false;
             // 
             // SubtotalTextBox
             // 
@@ -233,17 +255,17 @@
             this.CostLabel.TabIndex = 0;
             this.CostLabel.Text = "Cost:";
             // 
-            // menuStrip1
+            // OrderMenuStrip
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.OrderMenuStrip.BackColor = System.Drawing.Color.Transparent;
+            this.OrderMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(706, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
+            this.OrderMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.OrderMenuStrip.Name = "OrderMenuStrip";
+            this.OrderMenuStrip.Size = new System.Drawing.Size(706, 24);
+            this.OrderMenuStrip.TabIndex = 2;
+            this.OrderMenuStrip.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
@@ -327,25 +349,15 @@
             this.CancelButton.UseVisualStyleBackColor = false;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
-            // DvdCostTextBox
+            // OrderFormPrintPreviewDialog
             // 
-            this.DvdCostTextBox.Location = new System.Drawing.Point(181, 79);
-            this.DvdCostTextBox.Name = "DvdCostTextBox";
-            this.DvdCostTextBox.ReadOnly = true;
-            this.DvdCostTextBox.Size = new System.Drawing.Size(100, 26);
-            this.DvdCostTextBox.TabIndex = 10;
-            this.DvdCostTextBox.Text = "$10.00";
-            this.DvdCostTextBox.Visible = false;
-            // 
-            // DvdLabel
-            // 
-            this.DvdLabel.AutoSize = true;
-            this.DvdLabel.Location = new System.Drawing.Point(89, 82);
-            this.DvdLabel.Name = "DvdLabel";
-            this.DvdLabel.Size = new System.Drawing.Size(78, 19);
-            this.DvdLabel.TabIndex = 11;
-            this.DvdLabel.Text = "DVD Cost:";
-            this.DvdLabel.Visible = false;
+            this.OrderFormPrintPreviewDialog.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.OrderFormPrintPreviewDialog.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.OrderFormPrintPreviewDialog.ClientSize = new System.Drawing.Size(400, 300);
+            this.OrderFormPrintPreviewDialog.Enabled = true;
+            this.OrderFormPrintPreviewDialog.Icon = ((System.Drawing.Icon)(resources.GetObject("OrderFormPrintPreviewDialog.Icon")));
+            this.OrderFormPrintPreviewDialog.Name = "OrderFormPrintPreviewDialog";
+            this.OrderFormPrintPreviewDialog.Visible = false;
             // 
             // OrderForm
             // 
@@ -360,10 +372,10 @@
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.YourOrderGroupBox);
             this.Controls.Add(this.MovieSelectedGroupBox);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.OrderMenuStrip);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.OrderMenuStrip;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -375,8 +387,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.OrderPictureBox)).EndInit();
             this.YourOrderGroupBox.ResumeLayout(false);
             this.YourOrderGroupBox.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.OrderMenuStrip.ResumeLayout(false);
+            this.OrderMenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,7 +398,7 @@
 
         private System.Windows.Forms.GroupBox MovieSelectedGroupBox;
         private System.Windows.Forms.GroupBox YourOrderGroupBox;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip OrderMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem streamToolStripMenuItem;
@@ -412,5 +424,6 @@
         private System.Windows.Forms.Label CostLabel;
         private System.Windows.Forms.Label DvdLabel;
         private System.Windows.Forms.TextBox DvdCostTextBox;
+        private System.Windows.Forms.PrintPreviewDialog OrderFormPrintPreviewDialog;
     }
 }

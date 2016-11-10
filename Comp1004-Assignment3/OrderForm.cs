@@ -8,7 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
+/*  Movie Bonanza
+ *  Karl Kovacs
+ *  200327966
+ *  November 10, 2016
+ *  This app is a movie selection and streaming app
+ */
 namespace Comp1004_Assignment3
 {
 
@@ -105,35 +110,40 @@ namespace Comp1004_Assignment3
             
             
         }
-
+        // Stream button hides this form and brings up the stream form
         private void StreamButton_Click(object sender, EventArgs e)
         {
             StreamForm stream = new StreamForm();
             stream.Show();
             this.Hide();
         }
-
+        //Shows a print preview for the reciept
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-             MessageBox.Show("Your receipt is being printed!", "Movie Bananza");
-            
+            MessageBox.Show("Here's a look at your reciept:" + "\r\n" + "Movie Ordered: " + Program.info.Title + "\r\n" +
+               "Genre: " + Program.info.Genre + "\r\n" + "Total Cost: " + Program.info.GrandTotal,"Reciept");
         }
-
+        //Menu stream button calls the stream button
         private void streamToolStripMenuItem_Click(object sender, EventArgs e)
         {
             StreamButton.PerformClick();
         }
-
+        //Menu cancel button calls the cancel button
         private void cancelToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CancelButton.PerformClick();
         }
-
+        // Shows an about dialog box
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Developer: Karl Kovacs" + "\r\n" + 
                 "Version: 3.0" + "\r\n" + "Website: www.moviebonanza.com" + "\r\n" +
                 "Phone: 1-800-739-2934 ","About");
         }
+
+       
+
+
+
     }
 }
